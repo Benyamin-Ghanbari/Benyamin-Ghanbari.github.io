@@ -62,27 +62,18 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
-          date_end: ''
+        - title: Data Analyst Intern
+          company: Quera
+          company_url: 'https://quera.org/'
+          company_logo: Quera
+          location: Iran / Tehran
+          date_start: 'Aug - 2023'
+          date_end: 'Nov - 2023'
           description: |2-
-              Responsibilities include:
-
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+              Data Analysis Intern skilled in Scraping, SQL, Probability, Statistics, Machine 
+              Learning, Power BI, and Data Warehousing. Contributed to two team projects, 
+              demonstrating strong analytical and collaborative abilities
+        
     design:
       columns: '2'
   - block: accomplishments
