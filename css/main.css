@@ -11,7 +11,8 @@ html, body {
 body {
   font: 14px/20px Georgia, "Times New Roman", Times, serif;
   color: #848484;
-  background-image: linear-gradient(to bottom, #9abdff, #4d8cff);
+  background-image: linear-gradient( to right, #0000FF 50%, #ADD8E6 75%, #FFFF00);
+  
 }
 
   font-size: 41px;
