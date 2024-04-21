@@ -14,9 +14,8 @@ body {
 }
 
 body.grid {
-  background-image: url(../images/grid.png);
-  filter: brightness(80%) saturate(120%) hue-rotate(200deg);
-}
+ background: linear-gradient(to bottom, #007bff, #4db8ff); 
+} 
 
 h1 {
   font-size: 41px;
