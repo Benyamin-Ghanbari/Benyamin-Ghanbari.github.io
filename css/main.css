@@ -12,10 +12,9 @@ body {
   font: 14px/20px Georgia, "Times New Roman", Times, serif;
   color: #848484;
 }
-
-body.grid {
- background-color: #007bff; 
-} 
+body {
+  background-image: linear-gradient(to right, black 0%, black 50%, green 75%, yellow 100%);
+}
 
 h1 {
   font-size: 41px;
