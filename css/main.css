@@ -11,7 +11,7 @@ html, body {
 body {
   font: 14px/20px Georgia, "Times New Roman", Times, serif;
   color: #848484;
-  background-color: hsla(195, 53%, 77%, 0.5);
+  background-image: hsla(195, 53%, 77%, 0.5);
   
 }
 
