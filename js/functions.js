@@ -1,18 +1,17 @@
-var grid_animating;
+var gridToggled = false;
 
 $(window).keypress(function (e) {
     if (e.which == 103) {
-        if (!grid_animating) {
-            grid_animating = true;
-            $("body").toggleClass("grid");
-            if ($("body").hasClass("grid")) {
-                $("body").css("background-color", "#007bff"); // or any other shade of blue you prefer
-            } else {
-                $("body").css("background-color", ""); // Reset to default background color if needed
-            }
+        if (!gridToggled) {
+            $("body").css("background-color", "#c4e1ff"); // Change background color to blue
+            gridToggled = true;
+        } else {
+            $("body").css("background-color", ""); // Reset to default background color
+            gridToggled = false;
         }
     }
 });
+
 
 function checkWindowSize() {
     if ($(window).width() < 950) {
