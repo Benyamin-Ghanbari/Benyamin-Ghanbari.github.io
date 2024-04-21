@@ -14,7 +14,7 @@ body {
 }
 
 body.grid {
- background: linear-gradient(to bottom, #007bff, #4db8ff); 
+ background-color: #007bff; 
 } 
 
 h1 {
