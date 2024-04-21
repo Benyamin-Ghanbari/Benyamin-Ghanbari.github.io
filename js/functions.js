@@ -1,17 +1,11 @@
-var gridToggled = false;
-
 $(window).keypress(function (e) {
     if (e.which == 103) {
-        if (!gridToggled) {
-            $("body").css("background-color", "#c4e1ff"); // Change background color to blue
-            gridToggled = true;
-        } else {
-            $("body").css("background-color", ""); // Reset to default background color
-            gridToggled = false;
-        }
+        $("body").css({
+            "background-image": "none", // Remove background image
+            "background-color": "#c4e1ff" // Set background color to blue
+        });
     }
 });
-
 
 function checkWindowSize() {
     if ($(window).width() < 950) {
