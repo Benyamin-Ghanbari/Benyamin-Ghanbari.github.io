@@ -76,12 +76,12 @@ body {
 }
 
 .description {
-    color: #ffffff;
+    color: #4cb18c;
     flex: 1;
 }
 
 .year {
-    color: #888888;
+    color: #FF5F57;
     margin-left: 10px;
 }
 
