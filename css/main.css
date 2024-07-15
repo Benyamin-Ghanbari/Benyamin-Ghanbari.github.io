@@ -1,16 +1,69 @@
+/* main.css */
+
+
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9F9F9F #2D3436;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #2D3436;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #2D3436;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #2D3436;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #9F9F9F;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #9F9F9F;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #9F9F9F;
+  }
+  
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #2e3a46;
+    color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
 .terminal {
     background-color: #1e272e;
     border-radius: 10px;
-    width: 90%; /* Increased width */
-    max-width: 1200px; /* Set a maximum width */
-    height: 80vh; /* Increased height */
-    max-height: 800px; /* Set a maximum height */
+    width: 95%; /* 95% of viewport width */
+    /* max-width: 1200px; Maximum width */
+    height: 90vh; /* 90% of viewport height */
+    max-height: 90vh; /* Maximum height */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin-top: 20px;
-    position: relative; /* Ensure the header can be positioned correctly */
 }
 
 .terminal-header {
@@ -21,11 +74,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: calc(100% - 20px); /* Full width minus padding */
-    position: absolute; /* Position at the top */
-    top: 0;
-    left: 10px; /* Adjust as necessary */
-    right: 10px; /* Adjust as necessary */
+    /* width: 100%; Full width */
 }
 
 .buttons {
@@ -59,15 +108,15 @@
 
 .terminal-content {
     padding: 20px;
-    width: 100%;
-    overflow-y: auto;
+    flex: 1; /* Fill remaining space */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
 }
 
 .line {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
+    width: 100%; /* Full width */
 }
 
 .prompt {
@@ -99,8 +148,9 @@
     margin-top: 20px;
 }
 
+/* Custom styles for specific elements */
 .github-repository .detail a {
-    color: #ff5f57;
+    color: #28c940;
     text-decoration: none;
 }
 
@@ -120,4 +170,8 @@
 .section-title {
     color: #ffffff;
     font-weight: bold;
+}
+
+.red{
+    color: #ff5f57;
 }
