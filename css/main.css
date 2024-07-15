@@ -22,6 +22,7 @@ body {
     display: flex; /* Ensure terminal is displayed as flex container */
     flex-direction: column; /* Arrange children vertically */
     overflow: hidden; /* Prevent overflow content */
+    margin-top: 20px; /* Add margin to top */
 }
 
 .terminal-header {
