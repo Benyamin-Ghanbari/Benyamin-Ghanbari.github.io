@@ -7,6 +7,10 @@ body {
     background-color: #2e3a46;
     color: #f0f0f0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .terminal {
@@ -15,6 +19,8 @@ body {
     width: 80%;
     max-width: 800px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex; /* Ensure terminal is displayed as flex container */
+    flex-direction: column; /* Arrange children vertically */
 }
 
 .terminal-header {
@@ -25,6 +31,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%; /* Ensure header spans full width */
 }
 
 .buttons {
@@ -58,16 +65,18 @@ body {
 
 .terminal-content {
     padding: 20px;
+    width: 100%; /* Ensure content spans full width */
 }
 
 .line {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: 100%; /* Ensure lines span full width */
 }
 
 .prompt {
-    color: #00ff00;
+    color: #ff5f57; /* Change to the color of the prompt sign */
     margin-right: 10px;
 }
 
@@ -76,12 +85,12 @@ body {
 }
 
 .description {
-    color: #4cb18c;
+    color: #ffffff;
     flex: 1;
 }
 
 .year {
-    color: #FF5F57;
+    color: #888888;
     margin-left: 10px;
 }
 
@@ -93,4 +102,28 @@ body {
 
 .section {
     margin-top: 20px;
+}
+
+/* Custom styles for specific elements */
+.github-repository .detail a {
+    color: #ff5f57; /* Change to the color of the prompt sign */
+    text-decoration: none; /* Remove underline */
+}
+
+.github-repository .detail a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.description a {
+    color: #00aaff; /* Match command color */
+    text-decoration: none; /* Remove underline */
+}
+
+.description a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.section-title {
+    color: #ffffff;
+    font-weight: bold;
 }
