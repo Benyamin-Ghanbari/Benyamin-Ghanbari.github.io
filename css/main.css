@@ -16,8 +16,10 @@ body {
 .terminal {
     background-color: #1e272e;
     border-radius: 10px;
-    width: 80%;
-    max-width: 800px;
+    width: 90%; /* Increased width */
+    max-width: 1200px; /* Set a maximum width */
+    height: 80vh; /* Increased height */
+    max-height: 800px; /* Set a maximum height */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display: flex; /* Ensure terminal is displayed as flex container */
     flex-direction: column; /* Arrange children vertically */
@@ -68,7 +70,7 @@ body {
 .terminal-content {
     padding: 20px;
     width: 100%; /* Ensure content spans full width */
-    overflow: auto; /* Enable scrolling for content */
+    overflow-y: auto; /* Enable vertical scrolling for content */
 }
 
 .line {
