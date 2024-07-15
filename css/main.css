@@ -8,8 +8,8 @@ body {
     color: #f0f0f0;
     margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     height: 100vh;
 }
 
@@ -21,6 +21,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display: flex; /* Ensure terminal is displayed as flex container */
     flex-direction: column; /* Arrange children vertically */
+    overflow: hidden; /* Prevent overflow content */
 }
 
 .terminal-header {
@@ -66,6 +67,7 @@ body {
 .terminal-content {
     padding: 20px;
     width: 100%; /* Ensure content spans full width */
+    overflow: auto; /* Enable scrolling for content */
 }
 
 .line {
@@ -76,7 +78,7 @@ body {
 }
 
 .prompt {
-    color: #ff5f57; /* Change to the color of the prompt sign */
+    color: #28c940; /* Change to the color of the prompt sign */
     margin-right: 10px;
 }
 
@@ -90,7 +92,7 @@ body {
 }
 
 .year {
-    color: #888888;
+    color: #ffbd2e;
     margin-left: 10px;
 }
 
@@ -124,6 +126,6 @@ body {
 }
 
 .section-title {
-    color: #ffffff;
+    color: #28c940;
     font-weight: bold;
 }
